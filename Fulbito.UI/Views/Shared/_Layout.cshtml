@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <script src="~/js/FacebookClientSDK.js"></script>
+        <link href="/css/default.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/Content/themes/base/jquery-ui.css" />
+        <script src="/Scripts/jquery-1.9.0.js"></script>
+        <script src="/Scripts/jquery-ui-1.10.0.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css" />
+        <style>
+            body, input {
+                font-size: 12px;
+                font-family: Tahoma;
+            }
+            div.ui-datepicker{
+                font-size:12px;
+                font-family: Tahoma;
+            }
+        </style>
+        @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+    </head>
+    <body>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+       @* <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>*@
+
+        @*@Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)*@
+    </body>
+</html>
